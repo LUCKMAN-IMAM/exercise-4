@@ -1,0 +1,63 @@
+<html>
+        
+    <body bgcolor = "0000">
+        <center>
+        <style>
+                div{
+                  width: 500px;
+                  height: 500px;
+                  border-top: 10px solid blue;
+                  border-bottom: 10px solid blue;
+                  border-left: 10px solid blue;
+                  border-right: 10px solid blue;
+                  text-align: center;
+                }
+             </style>
+        <div><h4><font color="blue">BOSSLUCKMAN CALCULATOR</font></h4>
+        <br><br>
+        <label for=""><font color="yellow">Input 1</font></label>
+        <input type="text" id="input1">
+        <br>
+        <br>
+        <label for=""><font color="green">Input 2</font></label>
+        <input type="text" id="input2">
+        <br>
+        <br>
+        <label for=""><font color="pink">Result</font></label>
+        <input type="text" id="result">
+        <br>
+        <br>
+        
+        <button onclick=fplus()>plus (+)</button>
+        <button onclick=fminus()>minus (-)</button>
+        <button onclick=fmultiple()>multiple (x)</button>
+        <button onclick=fdivide()>divide (:)</button>
+    </div>
+
+<script>
+var input1 =document.getElementById("input1");
+var input2 =document.getElementById("input2");
+var result =document.getElementById("result"); 
+
+function fplus(){
+    result.value= Number(input1.value) +Number(input2.value);
+}
+function fminus(){
+    result.value= Number(input1.value) -Number(input2.value);
+}
+function fmultiple(){
+    result.value= Number(input1.value) *Number(input2.value);
+}
+function fdivide(){
+    result.value= Number(input1.value) /Number(input2.value);
+}
+</script>
+</div>
+<a href="index.html" class="btn btn-dark btn-lg btn-block" >BACK</a>
+</div>
+</center>
+    </body>
+</html>
+
+
+//BY LUCKMAN
